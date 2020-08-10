@@ -22,7 +22,7 @@
         <td><%= listing.item_name %></td>
         <td><%= listing.category_id %></td>
         <td><%= listing.description %></td>
-        <td><%= listing.price %></td>
+        <td><%= number_to_currency(listing.price) %></td>
         <td><%= listing.seller_id %></td>
         <td><%= listing.buyer_id %></td>
         <td><%= listing.profile_id %></td>

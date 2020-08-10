@@ -2,6 +2,8 @@
     <div class="row">
         <div class="col-md-8">
             <h1>Welcome to RocketLeet</h1>
+            <%= link_to 'View Categories', controller: 'categories' %>
+
         </div>
         <div class="col-md-4">
             <%= image_tag "rl_icon.jpeg", class:"main-img"%>
@@ -9,11 +11,13 @@
         <div>
             <div class="btn-toolbar mb-3" role="toolbar" aria-label="Toolbar with button groups">
                 <div class="btn-group mr-2" role="group" aria-label="First group">
-                    <button type="button" class="btn btn-secondary" href="">Body</button>
-                    <button type="button" class="btn btn-secondary">Wheels</button>
-                    <button type="button" class="btn btn-secondary">Toppers</button>
-                    <button type="button" class="btn btn-secondary">Goal Explosions</button>
-                    <button type="button" class="btn btn-secondary">Boost</button>
+
+                    <%= link_to "Body", listings_path(category:1), class: "btn btn-secondary" %>
+                    <%= link_to "Wheels", listings_path(category:2), class: "btn btn-secondary" %>
+                     <%= link_to "Toppers", listings_path(category:3), class: "btn btn-secondary" %>
+                    <%= link_to "Goal Explosions", listings_path(category:4), class: "btn btn-secondary" %>
+                    <%= link_to "Boost", listings_path(category:5), class: "btn btn-secondary" %>
+
                 </div>
 
             </div>

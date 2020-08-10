@@ -5,6 +5,9 @@ class ListingsController < ApplicationController
   # GET /listings.json
   def index
     @listings = Listing.all
+    if params[:category]
+      @listings = Listing.where(category_id: params[:category].to_i)
+    end
   end
 
   # GET /listings/1
@@ -27,6 +30,9 @@ class ListingsController < ApplicationController
     @listing = Listing.new(listing_params)
 
     @listing.profile_id = current_user.profile.id
+    @listing.seller_id = current_user.profile.id
+
+
 
     respond_to do |format|
       if @listing.save

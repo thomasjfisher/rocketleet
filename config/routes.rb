@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get 'buyer/page'
   resources :listings
   resources :categories
   resources :profiles

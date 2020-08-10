@@ -1,5 +1,7 @@
 <p id="notice"><%= notice %></p>
 
+<%= image_tag @listing.picture if @listing.picture.attached? %>
+
 <p>
   <strong>Item name:</strong>
   <%= @listing.item_name %>
@@ -7,7 +9,7 @@
 
 <p>
   <strong>Category:</strong>
-  <%= @listing.category_id %>
+  <%= @listing.category.name %>
 </p>
 
 <p>
@@ -17,7 +19,7 @@
 
 <p>
   <strong>Price:</strong>
-  <%= @listing.price %>
+  <%= number_to_currency(@listing.price) %>
 </p>
 
 <p>
@@ -37,3 +39,10 @@
 
 <%= link_to 'Edit', edit_listing_path(@listing) %> |
 <%= link_to 'Back', listings_path %>
+<div>
+</div>
+<div>
+</div>
+<div class="btn-group mr-2" role="group" aria-label="First group">
+<%= link_to "Buy", buyer_page_path, class: "btn btn-secondary" %>
+</div>
