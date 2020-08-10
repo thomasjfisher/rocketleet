@@ -1,3 +1,4 @@
+
 <p id="notice"><%= notice %></p>
 
 <%= image_tag @listing.picture if @listing.picture.attached? %>
@@ -22,20 +23,6 @@
   <%= number_to_currency(@listing.price) %>
 </p>
 
-<p>
-  <strong>Seller:</strong>
-  <%= @listing.seller_id %>
-</p>
-
-<p>
-  <strong>Buyer:</strong>
-  <%= @listing.buyer_id %>
-</p>
-
-<p>
-  <strong>Profile:</strong>
-  <%= @listing.profile_id %>
-</p>
 
 <%= link_to 'Edit', edit_listing_path(@listing) %> |
 <%= link_to 'Back', listings_path %>
@@ -44,5 +31,5 @@
 <div>
 </div>
 <div class="btn-group mr-2" role="group" aria-label="First group">
-<%= link_to "Buy", buyer_page_path, class: "btn btn-secondary" %>
+<%= link_to "Buy", buyer_page_path(listing: @listing.id), class: "btn btn-secondary" %>
 </div>

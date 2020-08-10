@@ -13,7 +13,7 @@
   <div class="col-md-8">
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav">
-       <li class="nav-item active"> 
+       <li class="nav-item active nav-right"> 
         <% if user_signed_in? %>
         <%= link_to "Logout", destroy_user_session_path, method: :delete %>
         <% end %>
