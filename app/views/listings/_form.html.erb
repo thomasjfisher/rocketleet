@@ -4,13 +4,20 @@
   <%= f.error_notification message: f.object.errors[:base].to_sentence if f.object.errors[:base].present? %>
 
   <div class="form-inputs">
+  <br>
     <%= f.input :item_name %>
+  <br>
     <%= f.association :category %>
+  <br>
     <%= f.input :description %>
+  <br>
     <%= f.input :price %>
+  <br>
     <%= f.file_field :picture %>
+  <br>
   </div>
-
+  <br>
+  <br>
   <div class="form-actions">
     <%= f.button :submit %>
   </div>
