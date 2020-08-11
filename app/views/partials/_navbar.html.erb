@@ -1,7 +1,8 @@
-
+<%# Created a sticky nav bar with access to all of the website. Home, back, create a listing,  %>
 <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
 <div class="col-md-3">
-  <a class="navbar-brand" href="/">RocketLeet</a>
+  <a class="navbar-brand" href="/">RocketLeet</a>  
+    <%= link_to 'Back', root_path, class: "nav-item btn btn-primary"  %>
    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -18,7 +19,7 @@
 
 
 </div>
-
+<%# Added logout function to destroy user session. %>
   <div class="col-md-2 nav-right">
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav">

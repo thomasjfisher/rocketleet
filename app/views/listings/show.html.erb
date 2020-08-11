@@ -23,8 +23,8 @@
   <%= number_to_currency(@listing.price) %>
 </p>
 
-
-<%= link_to 'Edit', edit_listing_path(@listing) %> |
+<%# Added Verification for editting listings %>
+<%= link_to 'Edit', edit_listing_path(@listing) if current_user.profile.id==@listing.profile_id %> |
 <%= link_to 'Back', listings_path %>
 <div>
 </div>

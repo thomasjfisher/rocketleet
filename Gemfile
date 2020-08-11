@@ -28,6 +28,7 @@ gem 'jbuilder', '~> 2.7'
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.2', require: false
 
+#My added gems for my Rocket Leet project.
 gem 'bootstrap', '~> 4.5.0'
 gem 'simple_form'
 gem 'devise'
@@ -57,5 +58,5 @@ end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
-
+#Amazon AWS S3 Gem
 gem "aws-sdk-s3", "~> 1.77"

@@ -24,6 +24,7 @@ class ProfilesController < ApplicationController
   # POST /profiles
   # POST /profiles.json
   def create
+    #Matching the profile id to the current user id.
     @profile = Profile.new(profile_params)
 
     @profile.user_id = current_user.id

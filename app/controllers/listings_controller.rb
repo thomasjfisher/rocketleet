@@ -22,6 +22,10 @@ class ListingsController < ApplicationController
 
   # GET /listings/1/edit
   def edit
+    #Verification passed here so that only the current user can edit a post if id's match.
+    if current_user.profile.id!=@listing.profile_id
+      redirect_to listings_path
+    end
   end
 
   # POST /listings
@@ -77,6 +81,7 @@ class ListingsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def listing_params
+      #Updated params with required list of my added items.
       params.require(:listing).permit(:item_name, :category_id, :description, :price, :seller_id, :buyer_id, :profile_id, :picture)
     end
 end
