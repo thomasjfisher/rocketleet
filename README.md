@@ -74,7 +74,47 @@ What can the user do on Rocket Leet? Below I have listed the users experience:
 
 ![Rocket Leet Home Page](docs/homepage_wirerframe.png)
 
+
+
 ![Sign Up](docs/sign_up_wf.png)
+
+
+
+![Create New Profile](docs/new_profile_wf.png)
+
+
+
+![User Profile](docs/your_profile_wf.png)
+
+
+
+![Listings](docs/new_list_wf.png)
+
+
+
+![Body](docs/body_wf.png)
+
+
+
+![Specific Body](docs/body_one_wf.png)
+
+
+
+![Wheels](docs/wheel_wf.png)
+
+
+
+![Toppers](docs/toppers_wf.png)
+
+
+
+![Goal Explosions](docs/goal_wf.png)
+
+
+
+![Boosts](docs/boost_wf.png)
+
+
 
 ## ERD
 
