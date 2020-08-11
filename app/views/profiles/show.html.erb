@@ -15,31 +15,33 @@
   <%= @profile.user_id %>
 </p>
 
-<p>
+<br>
+<br>
+<h1>Bought Items</h1> 
+<br>
 <div class="row">
-  <div class="col-md-5">
-    <h1>Bought Items</h1> 
-      <div class="row">
-      <% @profile.listings_to_buy.each do |listing| %>
-      <div class= "col-md-2">
-        <div class="card" style="width: 18rem;">
-          <%=image_tag listing.picture, class: "card-img-top" %>
-        <div class="card-body">
-          <h5 class="card-title">  <%= listing.item_name %></h5>
-          <p class="card-text">  <%= listing.description %>.</p>
-          <a href="#" class="btn btn-primary">Download Item Now!</a>
-          <div>
-          </div>
-          <br>
-          <br>
-          <a href="/" class="btn btn-primary">Back to Main Menu!</a>
+  <% @profile.listings_to_buy.each do |listing| %>
+  <div class= "col-md-3">
+    <div class="card" style="width: 18rem;">
+      <%=image_tag listing.picture, class: "card-img-top" %>
+      <div class="card-body">
+        <h5 class="card-title">  <%= listing.item_name %></h5>
+        <p class="card-text">  <%= listing.description %>.</p>
+        <a href="#" class="btn btn-primary">Download Item Now!</a>
+        <div>
         </div>
+        <br>
+        <br>
+        <a href="/" class="btn btn-primary">Back to Main Menu!</a>
       </div>
-      </div>
-      <% end %>
-      </div>
+    </div>
+  </div>
+  <% end %>
   </div>
 </div>
+</div>
+<br>
+<br>
 
 <h1>Listed Items</h1>
 <br>
@@ -60,30 +62,5 @@
 </div>
 </div>
 
-
-
-
-
 <%= link_to 'Edit', edit_profile_path(@profile) %> |
 <%= link_to 'Back', profiles_path %>
-
-
-
-  <div class="col-md-5 ">
-    <h1>TEST</h1>
-    <div class="row">
-    <% @profile.listings_to_sell.each do |listing| %>
-    <div class= "col-md-2">
-      <div class="card" style="width: 18rem;">
-        <%=image_tag listing.picture, class: "card-img-top" %>
-      <div class="card-body">
-        <h5 class="card-title">  <%= listing.item_name %></h5>
-        <p class="card-text">  <%= listing.description %>.</p>
-        <a href="/" class="btn btn-primary">Back to Main Menu!</a>
-      </div>
-    </div>
-    </div>
-    <% end %>
-    </div>
-  </div>
-</div>
