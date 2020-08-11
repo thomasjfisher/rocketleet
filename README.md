@@ -238,9 +238,17 @@ The Category model *has_many* Listings. Each of the categories, Body, Wheels, To
 
 The Listing model *belongs_to* Category. Each Listing also *belongs_to* Profile, in order to provide the buyer and seller id. This ensure that a Profile can have many listings for sale and also can purchase many listings. 
 
-## 18Discuss the database relations to be implemented in your application
+## Discuss the database relations to be implemented in your application
 
+The data base is a relational database, as shown in the ERD. The information in one table is related to the information in the other tables, and relies on the data from each.
 
+Taking this into consideration the relationships, I had to make sure that each table only held the relevant information and required on the information that it needed.
+
+An example of this is in the Listings. Listings required for their to be a Profile id in order to see who the items belonged to when sold and bought. The Profile id relied on the user id, and the Listings also relied on the relationship of the Categories, so that each item was placed in the relevant place. 
+
+In doing this, it made for an easy time, as all of the relationships were DRY, they only had the relevant information relating to each table. 
+
+The MVC Model database is a great template and will be used for any future designs or apps I take on.
 
 ## Provide your database schema design
 
