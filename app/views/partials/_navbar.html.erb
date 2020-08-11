@@ -7,7 +7,12 @@
 
 <div class="col-md-4">
     <%= link_to 'Sell My Item', new_listing_path, class: "nav-item btn btn-primary"  %>
-    <%= link_to 'View My Profile', profile_path(current_user.profile.id), class: "nav- btn btn-primary" %>
+    <% if current_user%>
+    <% if Profile.find_by(user_id: current_user.id)%>
+    <%= link_to 'View My Profile', profile_path(Profile.find_by(user_id: current_user.id).id), class: "nav- btn btn-primary" %>
+    <% end %>
+    <% end %>
+    
         <%= link_to 'View All Listings', listings_path, class: "nav- btn btn-primary" %>
 </div>
 
