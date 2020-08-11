@@ -40,7 +40,49 @@ I would also like to implement a profile picture for each profile. If no profile
 
 ### \- Sitemap
 
+![Rocket Leet Site Map](docs/Site Map.png)
+
 ### \- Screenshots
+
+Trello Board
+
+![Trello Board](docs/Trello_board.png)
+
+Rocket Leet Home Page
+
+![Rocket Leet Home Page](docs/RocketLeet_Homepage.png)
+
+Rocket Leet All Listings
+
+![Rocket Leet All Listings](docs/RocketLeet_AllListings.png)
+
+Rocket Leet New Listing
+
+![Rocket Leet New Listing](docs/new_listing.png)
+
+Rocket Leet Successful Listing Created
+
+![Rocket Leet Successful Listing Created](docs/created_listing.png)
+
+Rocket Leet Body Listings
+
+![Rocket Leet Body Listings](docs/all_body_items.png)
+
+Rocket Leet All Wheels
+
+![Rocket Leet All Wheels](docs/all_wheel_items.png)
+
+Roket Leet All Toppers
+
+![Roket Leet All Toppers](docs/all_topper_items.png)
+
+Rocket Leet All Goal Explosions
+
+![Rocket Leet All Goal Explosions](docs/all_goal_items.png)
+
+Rocket Leet All Boosts
+
+![Rocket Leet All Boosts](docs/all_boost_items.png)
 
 ### \- Target audience
 
@@ -120,7 +162,7 @@ Rocket Leet Boosts
 
 ## ERD
 
-
+![Rocket Leet ERD](docs/RocketLeet_ERD.png)
 
 ## Explain the different high-level components (abstractions) in your app
 
