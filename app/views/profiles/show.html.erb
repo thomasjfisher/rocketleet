@@ -17,40 +17,43 @@
 
 <p>
 <div class="row">
-<h1>BOUGHT ITEMS</h1>
-<% @profile.listings_to_buy.each do |listing| %>
-<div class= "col-md-4">
-  <div class="card" style="width: 18rem;">
-    <%=image_tag listing.picture, class: "card-img-top" %>
-  <div class="card-body">
-    <h5 class="card-title">  <%= listing.item_name %></h5>
-    <p class="card-text">  <%= listing.description %>.</p>
-    <a href="#" class="btn btn-primary">Download Item Now!</a>
-    <a href="/" class="btn btn-primary">Back to Main Menu!</a>
+  <h1>BOUGHT ITEMS</h1> 
+  <div class="col-md-6">
+      <div class="row">
+      <% @profile.listings_to_buy.each do |listing| %>
+      <div class= "col-md-4">
+        <div class="card" style="width: 18rem;">
+          <%=image_tag listing.picture, class: "card-img-top" %>
+        <div class="card-body">
+          <h5 class="card-title">  <%= listing.item_name %></h5>
+          <p class="card-text">  <%= listing.description %>.</p>
+          <a href="#" class="btn btn-primary">Download Item Now!</a>
+          <a href="/" class="btn btn-primary">Back to Main Menu!</a>
+        </div>
+      </div>
+      </div>
+      <% end %>
+      </div>
+  </div>
+  <div class="col-md-6 ">
+    <div class="row">
+    <h1>LISTED ITEMS</h1>
+    <br>
+    <% @profile.listings_to_sell.each do |listing| %>
+    <div class= "col-md-4">
+      <div class="card" style="width: 18rem;">
+        <%=image_tag listing.picture, class: "card-img-top" %>
+      <div class="card-body">
+        <h5 class="card-title">  <%= listing.item_name %></h5>
+        <p class="card-text">  <%= listing.description %>.</p>
+        <a href="/" class="btn btn-primary">Back to Main Menu!</a>
+      </div>
+    </div>
+    </div>
+    <% end %>
+    </div>
   </div>
 </div>
-</div>
-<% end %>
-</div>
-</p>
-
-<div class="row">
-<h1>LISTED ITEMS</h1>
-<% @profile.listings_to_sell.each do |listing| %>
-<div class= "col-md-4">
-  <div class="card" style="width: 18rem;">
-    <%=image_tag listing.picture, class: "card-img-top" %>
-  <div class="card-body">
-    <h5 class="card-title">  <%= listing.item_name %></h5>
-    <p class="card-text">  <%= listing.description %>.</p>
-    <a href="/" class="btn btn-primary">Back to Main Menu!</a>
-  </div>
-</div>
-</div>
-<% end %>
-</div>
-
-
 
 
 
