@@ -15,6 +15,9 @@
   <strong>User:</strong>
   <%= @profile.user_id %>
 </p>
+<br>
+<%= link_to 'Edit', edit_profile_path(@profile) %> |
+<%= link_to 'Back', profiles_path %>
 
 <br>
 <br>
@@ -59,9 +62,9 @@
   </div>
   <% end %>
   </div>
+
+
 </div>
 </div>
 
-<%= link_to 'Edit', edit_profile_path(@profile) %> |
-<%= link_to 'Back', profiles_path %>
 </div>
