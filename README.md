@@ -72,7 +72,9 @@ What can the user do on Rocket Leet? Below I have listed the users experience:
 
 ## Wireframes
 
+![Rocket Leet Home Page](docs/homepage_wirerframe.png)
 
+![Sign Up](docs/sign_up_wf.png)
 
 ## ERD
 
