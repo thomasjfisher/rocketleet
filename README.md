@@ -367,3 +367,10 @@ Throughout the project, I made use of a Trello board for the main tasks of the a
 - In Progress
 - Testing
 - Complete
+
+I feel it helped me to have a visual with the Trello board. I made sure each day to be working on something of importance. I ran into a bug that I could not figure out, so instead of wating until class, I decided to shift my focus over to my documentation. Its all about planning.
+
+
+
+### Author: 		Thomas Fisher		<a href= https://github.com/thomasjfisher/rocketleet>GitHub</a>
+
