@@ -1,40 +1,27 @@
+
+
 <p id="notice"><%= notice %></p>
 
 <h1>Listings</h1>
 
-<table>
-  <thead>
-    <tr>
-      <th>Item name</th>
-      <th></th>
-      <th>Category</th>
-            <th></th>
-      <th>Description</th>
-            <th></th>
-      <th>Price</th>
-            <th></th>
+<div class="row">
+ <% @listings.each do |listing| %>
+<div class= "col-md-3">
+  <div class="card" style="width: 18rem;">
+    <%=image_tag listing.picture, class: "card-img-top" %>
 
-      <th colspan="3"></th>
-    </tr>
-  </thead>
+  <div class="card-body">
+    <h5 class="card-title">  <%= listing.item_name %></h5>
+        <%= number_to_currency(listing.price) %>
+    <p class="card-text">  <%= listing.description %>.</p>
+    <%= link_to 'Show', listing, class: "btn btn-primary" %>
 
-  <tbody>
-    <% @listings.each do |listing| %>
-      <tr>
-        <td><%= listing.item_name %></td>
-        <td></td>
-        <td><%= listing.category.name %></td>
-                <td></td>
-        <td><%= listing.description %></td>
-                <td></td>
-        <td><%= number_to_currency(listing.price) %></td>
-        <td></td>
-        <td><%= link_to 'Show', listing %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
+  </div>
+</div>
+</div>
+<% end %>
+</div>
 
-<br>
 
-<%= link_to 'New Listing', new_listing_path %>
+
+<%# <%= link_to 'New Listing', new_listing_path %>  
